@@ -20,7 +20,7 @@ Other Claude surfaces: check the current Anthropic documentation for how skills 
 
 ## Notes
 
-Works best with [yt-dlp](https://github.com/yt-dlp/yt-dlp) installed; otherwise it falls back to slower web and browser methods. Edit `references/profile.md` with your own interests, projects and goals so relevance picks match you. It never fabricates transcripts, marks unreadable videos as unavailable and keeps quotes short. Status: v0.1, limited real-world testing. The report is a personal study aid; respect each creator's work.
+Works best with [yt-dlp](https://github.com/yt-dlp/yt-dlp) installed (it may warn about a missing JavaScript runtime; that was harmless in testing, and installing Deno removes it); otherwise it falls back to slower web and browser methods. Edit `references/profile.md` with your own interests, projects and goals so relevance picks match you. It never fabricates transcripts, marks unreadable videos as unavailable and keeps quotes short. Status: v0.1, limited real-world testing. The report is a personal study aid; respect each creator's work.
 
 ## License
 
