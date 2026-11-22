@@ -87,7 +87,7 @@ The header must state the channel name and URL, analysis date, period analyzed, 
 
 Use the most reliable path available and name it in the report. Do not ask for or store the user's credentials, and do not bypass paywalls, logins or access restrictions.
 
-1. **`yt-dlp`, if installed** (check with `yt-dlp --version`):
+1. **`yt-dlp`, if installed** (check with `yt-dlp --version`; install with `winget install yt-dlp.yt-dlp` on Windows, `brew install yt-dlp` on macOS. A shell opened before installing may need a restart to see it). Flat listings return IDs and titles reliably but often `NA` for dates and sometimes for views, so fetch per-video metadata for the candidates:
    - Channel listing: `yt-dlp --flat-playlist --dump-json "<channel URL>/videos"` gives IDs, titles and often view counts quickly.
    - Dates and fuller metadata: `yt-dlp --skip-download --dump-json <video URL>` per video, or `--dateafter now-365days` on the listing (slower, because it fetches each video).
    - Captions: `yt-dlp --skip-download --write-subs --write-auto-subs --sub-langs "en.*" --convert-subs vtt <video URL>`, then clean the text. Write downloads into their own new folder in the scratchpad, never the project.
